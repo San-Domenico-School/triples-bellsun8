@@ -28,7 +28,7 @@ public class Deck
     {
         return shuffledDeck.size();
     }
-    public Card geTopCard()
+    public Card getTopCard()
     {
         return shuffledDeck.remove(0);
     }
