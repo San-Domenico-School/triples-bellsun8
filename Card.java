@@ -72,7 +72,7 @@ public class Card extends Actor
         return isSelected;
     }
     
-    public void getIsSelected(boolean isSelected)
+    public void setIsSelected(boolean isSelected)
     {
         this.isSelected = isSelected;
     }

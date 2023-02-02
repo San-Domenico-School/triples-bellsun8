@@ -5,7 +5,7 @@ import greenfoot.*;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Animation  
+public class Animations  
 {
     // instance variables - replace the example below with your own
     
@@ -19,14 +19,7 @@ public class Animation
         Greenfoot.playSound("swoosh.wav");
     }
     
-    
 
-    /**
-     * Constructor for objects of class Animation
-     */
-    public Animation()
-    {
-    }
 
     
 }
