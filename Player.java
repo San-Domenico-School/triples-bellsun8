@@ -17,10 +17,12 @@ public class Player extends Actor
     private Card[] cardsSelected;
     private ArrayList<Card> cardsOnBoard;
     private ArrayList<Integer> selectedCardsIndex;
+    
  
     public Player(Dealer dealer)
     {
         this.dealer = dealer;
+        cardsSelected = new Card[3];
     }
     
     public void act()
