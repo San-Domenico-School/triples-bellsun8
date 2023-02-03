@@ -23,6 +23,10 @@ public class Player extends Actor
     {
         this.dealer = dealer;
         cardsSelected = new Card[3];
+        cardsOnBoard = new ArrayList<Card>();
+        selectedCardsIndex = new ArrayList<Integer>();
+
+        
     }
     
     public void act()
@@ -76,7 +80,18 @@ public class Player extends Actor
     
     private boolean threeCardsSelected()
     {
-        return false;
+         if(selectedCardsIndex.size() == 3)
+         {
+               cardsSelected[0] = cardsOnBoard.get(selectedCardsIndex.get(0));
+               cardsSelected[1] = cardsOnBoard.get(selectedCardsIndex.get(1)); 
+               cardsSelected[2] = cardsOnBoard.get(selectedCardsIndex.get(2));
+               return true;
+         }
+         else
+         {
+              return false;
+         }
+ 
     }
 
 }
